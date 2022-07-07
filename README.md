@@ -1,2 +1,3 @@
 # Formulario
-O repositório é um formulário de cadastro completo, responsivo para usar em seu projeto.
+O Formulário de cadastro completo para usar em seu projeto desktop ou mobile (responsivo) 
+feito em HTML e CSS
