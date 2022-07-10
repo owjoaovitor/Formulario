@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Montserrat:ital,wght@1,100;1,200&display=swap');
 * {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-   background-color: #a01c5a;
+   background-color: #608d5a;
     color: white;
     font-weight: 500;
     display: flex;
-    min-height: 120vh;
-    min-width: 100vw;
+    min-height: 90vh; 
+    min-width: 90vw;  
 }
 
 main {
-    width: 95vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,34 +25,9 @@ main {
 
 main h1 {
     color: #fafafa;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
     text-align: center;
-}
-
-main .alternative {
-    margin-top: 1rem;
-}
-
-main .alternative span {
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: #ffffff;;
-    position: relative;
-}
-
-main .alternative span::before, main .alternative span::after {
-    position: absolute;
-    content: '';
-    height: 1px;
-    width: 100px;
-    bottom: 50%;
-    right: 50px;
-    background: rgba(255, 255, 255, 0.973);
-}
-
-main .alternative span::after {
-    left: 50px;
 }
 
 main form {
@@ -74,7 +48,7 @@ main form label span {
 
 main form input {
     background: #161923;
-    width: 300px;
+    width: 270px;
     height: 50px;
     padding: 0 0.5rem;
     margin-top: 1rem;
@@ -85,30 +59,36 @@ main form input {
     border-radius: 8px;
 }
 
-main form input[type="submit"] {
-    cursor: pointer;
-    width: 50%;
-    margin-top: 2rem;
-    border: none;
-    border-radius: 32px;
-    background: #000000;
-    color: white;
-    font-size: 1.1rem;
-    transition: all .3s ease-in-out;
+main .entrar button {
+    background: #070707;
+    border-radius:44px;
+    padding: 15px;
+    cursor: pointer; 
+    color: #fff; 
+    border: none; 
+    font-size: 16px;
+    width: 130px;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
-main form input[type="submit"]:hover {
-    background: #4b2f46;
+main .entrar a{
+   text-decoration: none;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    
+}
+
+@media only screen and (max-width: 900px) {
+   
+    main {
+        width: 100vw;
+    }
 }
 
 @media only screen and (max-width: 450px) {
     main h1 {
         font-size: 2rem;
     }
-
-    main .alternative span {
-        font-size: 0.8rem;
-    }
-
 }
-
