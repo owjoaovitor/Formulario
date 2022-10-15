@@ -4,53 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro.css">
-    <link rel="shortcut icon" href="img/cadastro.png" type="image/x-icon">
-    <title>Formulário de Cadastro</title>
     
+    <!-- = CSS = -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="shortcut icon" href="img/cadastro.png" type="image/x-icon">    
+    <title>Início de sessão</title>
+
 </head>
-
 <body>
-    
-<main>  
-    <br>
-    
-    <h1>Cadastro</h1>
+    <!-- Pagina de Login  -->
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Início de sessão</span>
 
-     <form action="">
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Entre com seu email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Entre com sua senha" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
 
-        <label for="nome">
-            <span>Nome</span>
-            <input type="text" id="nome" name="nome">
-        </label>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Salvar</label>
+                        </div>
+                        
+                        <a href="#" class="text">Esqueceu a senha?</a>
+                    </div>
 
-        <label for="telefone">
-            <span>Telefone</span>
-            <input type="tel" id="telefone" name="telefone">
-        </label>
+                    <div class="input-field button">
+                        <input type="button" value="Acessar">
+                    </div>
+                </form>
 
-        <label for="nascimento">
-            <span>Nascimento</span>
-            <input type="date" id="nascimento" name="nascimento">
-        </label>
+                <div class="login-signup">
+                    <span class="text"> Não é um usuario? 
+                    
+                        <a href="#" class="text signup-link">Cadastre-se agora</a>
+                    </span>
+                </div>
+            </div>
 
-        <label for="email">
-            <span>E-mail</span>
-            <input type="email" id="email" name="email">
-        </label>
+            <!-- Cadastro -->
+            <div class="form signup">
+                <span class="title">Cadastro</span>
 
-        <label for="senha">
-            <span>Senha</span>
-            <input type="password" id="senha" name="senha">
-        </label>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Entre com seu nome" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Entre com seu email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Crie uma senha" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Confirme sua senha" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
 
-     </form>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text"> Eu aceito todos os termos e condições</label>
+                              
+                        </div>
+                    </div>
 
-    <br>
+                    <div class="input-field button">
+                        <input type="button" value="Salvar">
+                    </div>
+                </form>
 
-    <div class="entrar">
-      <a href=""><button>Registrar</button></a>
+                <div class="login-signup">
+                    <span class="text">Já é um usuario?
+                        <a href="#" class="text login-link">Entre agora</a>
+                    </span>
+                </div>
+            </div>
+        </div>
     </div>
-    
+
+    <script src="script.js"></script>
+  
 </body>
 </html>
